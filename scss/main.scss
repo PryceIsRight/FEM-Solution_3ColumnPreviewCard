@@ -1,0 +1,163 @@
+@use 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 15px;
+    font-family: variables.$font-lexend;
+    color: variables.$color-trnsp-white;
+}
+
+body {
+    height: 100%;
+    background-color: variables.$color-lightgray;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 75px;
+}
+
+a {
+    text-decoration: none;
+    color: variables.$color-trnsp-white;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.col-title {
+    font-family: variables.$font-bigshoulders;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.btn {
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 150px;
+    text-align: center;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    background-color: variables.$color-lightgray;
+    transition: all .25s ease-in-out;
+}
+
+.btn:hover {
+    background: transparent;
+    border: 2px solid variables.$color-lightgray;
+}
+
+main {
+    height: 100%;
+
+    .card {
+        height: 60%;
+        min-width: 550px;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 8px;
+        overflow: hidden;
+
+        #col-sedan {
+            background-color: variables.$color-sedan;
+
+            .btn {
+                color: variables.$color-sedan;
+            }
+
+            .btn:hover {
+                color: variables.$color-lightgray;
+            }
+        }
+
+        #col-suv {
+            background-color: variables.$color-suv;
+
+            .btn {
+                color: variables.$color-suv;
+            }
+
+            .btn:hover {
+                color: variables.$color-lightgray;
+            }
+        }
+
+        #col-luxury {
+            background-color: variables.$color-luxury;
+
+            .btn {
+                color: variables.$color-luxury;
+            }
+
+            .btn:hover {
+                color: variables.$color-lightgray;
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: #000;
+}
+
+.attribution a:hover {
+    color: #555;
+}
+
+
+@media (max-width: 1200px) {
+    main {
+        height: 1400px;
+    }
+    
+    main .card {
+        height: 1200px;
+        min-width: 345px;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .btn {
+        margin: 1rem 0 0;
+    }
+}
+

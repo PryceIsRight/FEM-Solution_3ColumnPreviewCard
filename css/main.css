@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+body {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 75px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  padding: 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-title {
+  font-family: "Big Shoulders Display", cursive;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.btn {
+  margin: 2rem 0;
+  padding: 1rem;
+  width: 150px;
+  text-align: center;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  background-color: #f2f2f2;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 2px solid #f2f2f2;
+}
+
+main {
+  height: 100%;
+}
+main .card {
+  height: 60%;
+  min-width: 550px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+}
+main .card #col-sedan {
+  background-color: #e38826;
+}
+main .card #col-sedan .btn {
+  color: #e38826;
+}
+main .card #col-sedan .btn:hover {
+  color: #f2f2f2;
+}
+main .card #col-suv {
+  background-color: #006970;
+}
+main .card #col-suv .btn {
+  color: #006970;
+}
+main .card #col-suv .btn:hover {
+  color: #f2f2f2;
+}
+main .card #col-luxury {
+  background-color: #004241;
+}
+main .card #col-luxury .btn {
+  color: #004241;
+}
+main .card #col-luxury .btn:hover {
+  color: #f2f2f2;
+}
+
+.attribution {
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #000;
+}
+
+.attribution a:hover {
+  color: #555;
+}
+
+@media (max-width: 1200px) {
+  main {
+    height: 1400px;
+  }
+
+  main .card {
+    height: 1200px;
+    min-width: 345px;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    margin: 1rem 0 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
